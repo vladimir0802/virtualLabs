@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-black.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+      }
+      .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+      }
+      img {
+        width: 49%;
+        height: auto;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div
+        style="background-color: #265728; color: white"
+        class="w3-bar w3-top w3-left-align w3-large"
+      >
+        <a
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+          href="javascript:void(0)"
+          onclick="w3_open()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a
+          href="#"
+          class="w3-bar-item w3-button"
+          style="background-color: #265728; color: white"
+          >Virtualni laboratoriji iz Biologije</a
+        >
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-collapse w3-large w3-animate-left"
+      style="background-color: #dbefdc; color: #000"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large"
+        title="Close Menu"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Izbornik</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#disanje"
+        >Disanje</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-black" href="#sukcesija"
+        >Sukcesija</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-black" href="#kromosomi"
+        >Promjene broja kromosoma</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-black" href="#populacija"
+        >Struktura populacije</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-black" href="#melanizam"
+        >Industrijski melanizam</a
+      >
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div id="disanje" class="w3-main" style="margin-left: 250px">
+      <div class="w3-row w3-padding-32">
+        <div class="w3-third w3-container">
+          <h1 class="w3-text-teal">Disanje u ulozi održivosti života</h1>
+          <p>UZRAST: 2. razred srednje škole</p>
+          <p>
+            Pomoću ovog laboratorija učenici lakše vizualiziraju prijenos
+            plinova kroz dišni i optjecajni sustav.
+          </p>
+          <p>
+            Laboratorij je potpuno samostalno orjentiran. Automatizirano
+            fokusira bitne dijelove te uz popratne teksualne dopune detaljno
+            objašnjava te upućuje učenike i profesore pri korištenju.
+          </p>
+          <p>
+            + Izrazita detaljnost u objašnjavanju građe dišnog i krvožilnog
+            sustava
+          </p>
+          <p>
+            + Lako razumljiv prikaz prijenosa plinova na makroskopskoj (organi)
+            i mikroskopskoj (stanice) razini
+          </p>
+          <p>
+            - Nema mogućnosti mijenjanja veličine prikaza te vraćanja u natrag.
+          </p>
+          <a
+            href="https://biomanbio.com/HTML5GamesandLabs/Physiologygames/respiratory_journeyhtml5page.html"
+            >Link na virtualni laboratorij</a
+          >
+        </div>
+        <div class="w3-twothird w3-container">
+          <h3 class="w3-text-teal">Snimke zaslona</h3>
+          <br></br>
+          <img src="Screenshot_1.jpg" alt="1" width="400" />
+          <img src="Screenshot_2.jpg" alt="2" width="400" />
+        </div>
+      </div>
+
+      <div id="sukcesija" class="w3-row w3-padding-32">
+        <div class="w3-third w3-container">
+          <h1 class="w3-text-teal">Sukcesija</h1>
+          <p>UZRAST: 1. razred srednje škole</p>
+          <p>
+            Laboratorij pomaže učenicima u shvaćanju naizgled kompleksnog i
+            apstraktnog procesa sukcesije
+          </p>
+          <p>
+            Nudi mogućnost odabira velikog broja opcija kako bi uz razmišljanje
+            i metodu pokušaja/pogreške učenici došli do ispravnog odgovora.
+          </p>
+          <p>+ Labos zahtjeva visok stupanj interakcije.</p>
+          <p>
+            + Veliki broj izbora što doprinosi raznovrsnosti u odgovorima te
+            kompleksnosti.
+          </p>
+          <p>
+            - Nedostaju opcije pomoći kako bi se sprječila mogućnost rješavanja
+            metodom pokušaja/pogreške.
+          </p>
+          <a
+            href="https://biomanbio.com/HTML5GamesandLabs/EcoGames/succession_interactive.html"
+            >Link na virtualni laboratorij</a
+          >
+        </div>
+        <div class="w3-twothird w3-container">
+          <h3 class="w3-text-teal">Snimke zaslona</h3>
+          <br></br>
+          <img src="Screenshot_3.jpg" alt="1" width="400" />
+          <img src="Screenshot_4.jpg" alt="2" width="400" />
+        </div>
+      </div>
+
+      <div id="kromosomi" class="w3-row w3-padding-32">
+        <div class="w3-third w3-container">
+          <h1 class="w3-text-teal">Promjene broja kromosoma</h1>
+          <p>UZRAST: 4. razred srednje škole</p>
+          <p>
+            Laboratorij pomaže učenicima u razumijevanju načina nastanka
+            različitih sindroma kao posljedica promjena broja kromosoma.
+          </p>
+          <p>
+            Provodi učenike korak po korak kroz proces mejoze u slučaju
+            nerazdvajanja kromosoma. Uz svaki korak postoje detaljna objašnjenja
+            i upute za rješavanje.
+          </p>
+          <p>
+            + Kao podsjetnik, postoji opcija za kratki pregled procesa mejoze.
+          </p>
+          <p>
+            + Nudi se primjer nerazdvajanja kromosoma i u mejozi I i mejozi II.
+          </p>
+          <p>
+            - Nemogućnost pomicanja kromosoma u obje strane što dovodi do krivog
+            zaključka.
+          </p>
+          <a
+            href="https://biomanbio.com/HTML5GamesandLabs/Genegames/nondisjunctionpage.html"
+            >Link na virtualni laboratorij</a
+          >
+        </div>
+        <div class="w3-twothird w3-container">
+          <h3 class="w3-text-teal">Snimke zaslona</h3>
+          <br></br>
+          <img src="Screenshot_5.jpg" alt="1" width="400" />
+          <img src="Screenshot_6.jpg" alt="2" width="400" />
+        </div>
+      </div>
+
+      <div id="populacija" class="w3-row w3-padding-32">
+        <div class="w3-third w3-container">
+          <h1 class="w3-text-teal">Struktura populacije</h1>
+          <p>UZRAST: 1. razred srednje škole</p>
+          <p>
+            Laboratorij pomaže učenicima u razumijevanju utjecaja određenih
+            čimbenika na brojnost jedinki unutar vrsta i brojnost vrsta na
+            određenom području.
+          </p>
+          <p>
+            Laboratorij je apsolutno slobodnog karaktera. Organiziran je kao
+            velika skupina opcija čijom manipulacijom dolazi do promjena u
+            ponašanju.
+          </p>
+          <p>+ Tablični pregled.</p>
+          <p>+ Veliki broj opcija za promjenu te lakše shvaćanje.</p>
+          <p>
+            - Nedostaju teksualne upute i indicije kao pomoć pri zaključivanju.
+          </p>
+          <a
+            href="https://virtualbiologylab.org/ModelsHTML5/IslandBiogeography/IslandBiogeography.html"
+            >Link na virtualni laboratorij</a
+          >
+        </div>
+        <div class="w3-twothird w3-container">
+          <h3 class="w3-text-teal">Snimke zaslona</h3>
+          <br></br>
+          <img src="Screenshot_8.jpg" alt="1" width="400" />
+          <img src="Screenshot_7.jpg" alt="2" width="400" />
+        </div>
+      </div>
+
+      <div id="melanizam" class="w3-row w3-padding-32">
+        <div class="w3-third w3-container">
+          <h1 class="w3-text-teal">Industrijski melanizam</h1>
+          <p>UZRAST: 4. razred srednje škole</p>
+          <p>
+            Laboratorij je zamišljen kao jednostavan prikaz selekcije kao jedne
+            od sila evolucije.
+          </p>
+          <p>
+            Promjenom boje površine tijela te zahtjevanom interakcijom korisnika
+            vizualizira proces usmjerene selekcije.
+          </p>
+          <p>
+            + Vizualizira promjene u izgledu kore breze i promjene
+            prevladavajućeg fenotipa noćnog leptira.
+          </p>
+          <p>- Dugo trajanje</p>
+          <p>- Potrebne upute za početak rada.</p>
+          <p>- Nedostaju indicije.</p>
+          <a
+            href="https://virtualbiologylab.org/NetWebHTML_FilesJan2016/IndustrialMelanismModel.html"
+            >Link na virtualni laboratorij</a
+          >
+        </div>
+        <div class="w3-twothird w3-container">
+          <h3 class="w3-text-teal">Snimke zaslona</h3>
+          <br></br>
+          <img src="Screenshot_9.jpg" alt="1" width="400" />
+          <img src="Screenshot_10.jpg" alt="2" width="400" />
+        </div>
+      </div>
+
+      <footer id="myFooter">
+        <div
+          class="w3-container w3-padding-32"
+          style="background-color: #3d8b40; color: #265728"
+        >
+          <h7>Developed by <b>Vladimir Đurđević</b></h7>
+        </div>
+      </footer>
+
+      <!-- END MAIN -->
+    </div>
+
+    <script>
+      // Get the Sidebar
+      var mySidebar = document.getElementById("mySidebar");
+
+      // Get the DIV with overlay effect
+      var overlayBg = document.getElementById("myOverlay");
+
+      // Toggle between showing and hiding the sidebar, and add overlay effect
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+          overlayBg.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+          overlayBg.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      }
+      function scrapeIframe() {
+        $.ajax({
+          url: "https://biomanbio.com/HTML5GamesandLabs/Physiologygames/respiratory_journeyhtml5page.html",
+          dataType: "text",
+          cors: true,
+          secure: true,
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+          success: function (data) {
+            var elements = $("<div>")
+              .html(data)[0]
+              .getElementsByTagName("ul")[0]
+              .getElementsByTagName("li");
+            for (var i = 0; i < elements.length; i++) {
+              var theText = elements[i].firstChild.nodeValue;
+              console.log("eeee    ", theText);
+            }
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
